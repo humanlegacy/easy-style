@@ -1,5 +1,5 @@
-.menu,
-.menu ul {
+.si-menu,
+.si-menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -10,14 +10,14 @@
   box-shadow: 0 0 15px rgba(0, 0, 0, .2)
 }
 
-.menu li span,
-.tip:after {
+.si-menu li span,
+.si-tip:after {
   font-size: 12px;
   padding: 0 10px;
   white-space: normal
 }
 
-.menu ul {
+.si-menu ul {
   position: absolute;
   top: 0;
   left: 180px;
@@ -29,7 +29,7 @@
   transition: all .5s cubic-bezier(.4, 0, .2, 1)
 }
 
-.menu ul:before {
+.si-menu ul:before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -40,42 +40,42 @@
   border-bottom: 7px solid transparent
 }
 
-.menu li,
-.tip {
+.si-menu li,
+.si-tip {
   position: relative;
   line-height: 30px
 }
 
-.menu li {
+.si-menu li {
   border-bottom: 1px solid #eee
 }
 
-.menu li span {
+.si-menu li span {
   display: block;
   cursor: pointer
 }
 
-.menu li:last-child {
+.si-menu li:last-child {
   border-bottom: none
 }
 
-.menu li:hover {
+.si-menu li:hover {
   background: #f5f5f5
 }
 
-.menu li:hover>ul {
+.si-menu li:hover>ul {
   left: 200px;
   opacity: 1;
   visibility: visible;
   z-index: 10
 }
 
-.tip {
+.si-tip {
   cursor: pointer
 }
 
-.tip:after,
-.tip:before {
+.si-tip:after,
+.si-tip:before {
   transition: all .24s ease 0s;
   -webkit-transition: all .36s ease 0s;
   z-index: 1;
@@ -86,7 +86,7 @@
   -webkit-transform: translateY(12px) translateX(-50%);
 }
 
-.tip:before {
+.si-tip:before {
   content: " ";
   display: block;
   width: 0;
@@ -96,7 +96,7 @@
   border-right: 5px solid transparent
 }
 
-.tip:after {
+.si-tip:after {
   content: attr(data-title);
   background: #000;
   color: #fff;
@@ -108,18 +108,18 @@
   white-space: nowrap;
 }
 
-.tip:hover:after,
-.tip:hover:before {
+.si-tip:hover:after,
+.si-tip:hover:before {
   opacity: 1;
   transform: translateY(0) translateX(-50%);
   -webkit-transform: translateY(0) translateX(-50%);
 }
 
-.star-box {
+.si-star-box {
   overflow: hidden
 }
 
-.star-box .star-wrap {
+.si-star-box .star-wrap {
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   display: inline-block;
@@ -128,7 +128,7 @@
   height: 30px
 }
 
-.star-box .star-wrap .star {
+.si-star-box .star-wrap .star {
   color: #aaa;
   display: inline-block;
   cursor: pointer;
@@ -139,18 +139,18 @@
   -webkit-transition: color .24s ease 0s
 }
 
-.star-box .star-wrap .star:hover,
-.star-box .star-wrap .star:hover~label,
-.star-box .star-wrap input[name=star]:checked~label {
+.si-star-box .star-wrap .star:hover,
+.si-star-box .star-wrap .star:hover~label,
+.si-star-box .star-wrap input[name=star]:checked~label {
   color: #ea9e0f
 }
 
-.star-box .star-wrap input[name=star],
-.star-box input[name=star] {
+.si-star-box .star-wrap input[name=star],
+.si-star-box input[name=star] {
   display: none
 }
 
-.star-box .star-cancel {
+.si-star-box .star-cancel {
   transform: rotate(-180deg);
   -webkit-transform: rotate(-180deg);
   vertical-align: middle;
@@ -165,11 +165,11 @@
   color: #fff
 }
 
-.star-box .star-cancel:active {
+.si-star-box .star-cancel:active {
   box-shadow: inset 0 2px 5px rgba(0, 0, 0, .25)
 }
 
-.loading {
+.si-loading {
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -181,14 +181,14 @@
   -webkit-animation: spin1 1.5s infinite linear
 }
 
-.loading:after,
-.loading:before {
+.si-loading:after,
+.si-loading:before {
   content: '';
   position: absolute;
   display: block
 }
 
-.loading:before {
+.si-loading:before {
   top: -12px;
   left: -12px;
   width: 60px;
@@ -201,7 +201,7 @@
   -webkit-animation: spin2 .8s infinite linear
 }
 
-.loading:after {
+.si-loading:after {
   top: 3px;
   left: 3px;
   width: 25px;
@@ -264,8 +264,8 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, .1), 0 30px 80px rgba(0, 0, 0, .5)
 }
 
-.table,
-.toggle {
+.si-table,
+.si-toggle {
   width: 100%
 }
 
@@ -312,15 +312,15 @@
   -webkit-transform: scale(1)
 }
 
-.toggle .toggle-item {
+.si-toggle .si-toggle-item {
   box-sizing: border-box
 }
 
-.toggle .toggle-item:last-child {
+.si-toggle .si-toggle-item:last-child {
   border-bottom: none
 }
 
-.toggle .toggle-item .toggle-content {
+.si-toggle .si-toggle-item .si-toggle-content {
   background: #fff;
   box-sizing: border-box;
   padding: 15px;
@@ -329,7 +329,7 @@
   display: none
 }
 
-.toggle .toggle-item label {
+.si-toggle .si-toggle-item label {
   cursor: pointer;
   display: block;
   padding: 15px;
@@ -338,7 +338,7 @@
   font-size: 15px
 }
 
-.toggle .toggle-item label:after {
+.si-toggle .si-toggle-item label:after {
   content: " ";
   display: inline-block;
   float: right;
@@ -352,56 +352,56 @@
   -webkit-transition: all .3s ease 0s
 }
 
-.toggle .toggle-item input[type=radio] {
+.si-toggle .si-toggle-item input[type=radio] {
   display: none
 }
 
-.toggle .toggle-item input[type=radio]:checked~.toggle-content {
+.si-toggle .si-toggle-item input[type=radio]:checked~.si-toggle-content {
   display: block;
   height: auto
 }
 
-.toggle .toggle-item input[type=radio]:checked~label:after {
+.si-toggle .si-toggle-item input[type=radio]:checked~label:after {
   transform: rotate(0);
   -webkit-transform: rotate(0)
 }
 
-.table {
+.si-table {
   text-align: center
 }
 
-.table thead {
+.si-table thead {
   font-weight: 700;
   background: #f5f5f5
 }
 
-.table td {
+.si-table td {
   padding: 10px 0;
   border-bottom: 1px solid #e5e5e5
 }
 
 @media (max-width:800px) {
-  .table thead {
+  .si-table thead {
     display: none
   }
 
-  .table tr {
+  .si-table tr {
     border: 3px solid #e0e0e0;
     display: block;
     margin-bottom: 5px
   }
 
-  .table tr td {
+  .si-table tr td {
     display: block;
     text-align: left;
     border-bottom: 1px dashed #e5e5e5
   }
 
-  .table tr td:last-child {
+  .si-table tr td:last-child {
     border-bottom: none
   }
 
-  .table tr td:before {
+  .si-table tr td:before {
     content: attr(data-title);
     display: inline-block;
     text-align: left;
@@ -421,28 +421,28 @@
   --speed: 1.5s;
 }
 
-.carousel {
+.si-carousel {
   width: 300px;
   height: calc(var(--height) * 1px);
   background: #f5f5f5;
   overflow: hidden;
 }
 
-.carousel .wrap {
+.si-carousel .wrap {
   display: flex;
   flex-direction: column;
   animation: move calc(var(--speed) * var(--steps)) steps(var(--steps)) infinite;
 }
 
-.carousel .item {
+.si-carousel .item {
   width: 100%;
   animation: itemMove calc(var(--speed)) infinite;
   text-align: center;
   font-size: 12px;
 }
 
-.carousel .wrap,
-.carousel .item {
+.si-carousel .wrap,
+.si-carousel .item {
   height: calc(var(--height) * 1px);
   line-height: calc(var(--height) * 1px);
   list-style: none;
@@ -450,8 +450,8 @@
   margin: 0;
 }
 
-.carousel:hover .wrap,
-.carousel:hover .item {
+.si-carousel:hover .wrap,
+.si-carousel:hover .item {
   animation-play-state: paused;
 }
 

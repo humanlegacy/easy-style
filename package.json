@@ -1,0 +1,18 @@
+{
+  "name": "style-interface",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:humanlegacy/style-interface.git"
+  },
+  "version": "1.0.0",
+  "description": "纯css实现交互",
+  "main": "index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "humanlegacy",
+  "license": "MIT"
+}

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>easy-style</title>
+  <title>style-interface</title>
 </head>
 
 <body>
@@ -71,18 +71,18 @@
 
 
   <!--ui样式-->
-  <link rel='stylesheet' href='easy-style.css' type='text/css'>
+  <link rel='stylesheet' href='index.css' type='text/css'>
 
   <div class="display-flex">
 
     <div class="items flex" data-title="加载">
       <!--loading加载-->
-      <div class="loading"></div>
+      <div class="si-loading"></div>
     </div>
 
     <div class="items flex" data-title="多级菜单">
       <!--loading加载-->
-      <ul class="menu">
+      <ul class="si-menu">
         <li>
           <span>电子产品</span>
           <ul>
@@ -165,14 +165,14 @@
 
     <div class="items flex" data-title="提示">
       <!--tip-->
-      <span class="tip" data-title="fucking crazy Thursday!">KFC</span>
+      <span class="si-tip" data-title="fucking crazy Thursday!">KFC</span>
     </div>
   </div>
 
   <div class="display-flex">
     <div class="items flex" data-title="五星打分">
       <!--五星打分-->
-      <div class="star-box">
+      <div class="si-star-box">
         <input type="radio" id="star0" name="star"><label for="star0" class="star-cancel">取消</label>
         <div class="star-wrap">
           <input type="radio" id="star1" name="star"><label for="star1" class="star">★</label>
@@ -205,7 +205,7 @@
   <div class="display-flex">
     <div class="items flex" data-title="纯CSS内容轮播">
       <!--纯CSS内容轮播-->
-      <div class="carousel">
+      <div class="si-carousel">
         <div class="wrap">
           <div class="item">纯CSS内容轮播</div>
           <div class="item">鼠标悬停轮播之上，动画暂停</div>
@@ -224,22 +224,22 @@
 
   <div class="items" data-title="手风琴">
     <!--toggle手风琴-->
-    <div class="toggle">
-      <div class="toggle-item">
+    <div class="si-toggle">
+      <div class="si-toggle-item">
         <input type="radio" name="toggle" id="toggle1" checked><label for="toggle1">从一道面试题谈谈函数柯里化(Currying)</label>
-        <div class="toggle-content">
+        <div class="si-toggle-content">
           从一道面试题谈谈函数柯里化(Currying)从一道面试题谈谈函数柯里化(Currying)从一道面试题谈谈函数柯里化(Currying)
         </div>
       </div>
-      <div class="toggle-item">
+      <div class="si-toggle-item">
         <input type="radio" name="toggle" id="toggle2"><label for="toggle2">简单理解JavaScript中的柯里化和反柯里化</label>
-        <div class="toggle-content">
+        <div class="si-toggle-content">
           简单理解JavaScript中的柯里化和反柯里化简单理解JavaScript中的柯里化和反柯里化简单理解JavaScript中的柯里化和反柯里化
         </div>
       </div>
-      <div class="toggle-item">
+      <div class="si-toggle-item">
         <input type="radio" name="toggle" id="toggle3"><label for="toggle3">浅析 JavaScript 中的 函数 currying 柯里化</label>
-        <div class="toggle-content">
+        <div class="si-toggle-content">
           浅析 JavaScript 中的 函数 currying 柯里化浅析 JavaScript 中的 函数 currying 柯里化浅析 JavaScript 中的 函数 currying 柯里化
         </div>
       </div>
@@ -248,7 +248,7 @@
 
   <div class="items" data-title="响应式表格">
     <!--table响应式表格-->
-    <table border="0" cellspacing="0" cellpadding="0" class="table">
+    <table border="0" cellspacing="0" cellpadding="0" class="si-table">
       <thead>
         <tr>
           <td>姓名</td>
