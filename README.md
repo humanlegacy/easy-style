@@ -1,3 +1,3 @@
-# css-ui
->[点击查看css-ui实例](https://749264345.github.io/css-ui)
+# easy-style
+>[点击查看](https://humanlegacy.github.io/easy-style)
 

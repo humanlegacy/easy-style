@@ -1,207 +1,290 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>css-ui</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>easy-style</title>
 </head>
+
 <body>
+  <style>
+    body,
+    html {
+      width: 100%;
+      min-width: 700px;
+      height: 100%;
+      border: none;
+      margin: 0;
+      padding: 25px;
+      box-sizing: border-box
+    }
+
+    body .display-flex,
+    html .display-flex {
+      display: flex
+    }
+
+    body .display-flex .flex,
+    html .display-flex .flex {
+      flex: 1
+    }
+
+    body .items,
+    html .items {
+      padding: 80px 25px 50px;
+      box-sizing: border-box;
+      border-bottom: 1px dashed #eee;
+      position: relative
+    }
+
+    body .items .demo-show-dialog,
+    html .items .demo-show-dialog {
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 10px;
+      background: #aa0;
+      border-radius: 5px;
+      font-size: 15px;
+      color: #eee
+    }
+
+    body .items .demo-show-dialog:active,
+    html .items .demo-show-dialog:active {
+      box-shadow: inset 0 2px 5px rgba(0, 0, 0, .2)
+    }
+
+    body .items:before,
+    html .items:before {
+      content: attr(data-title);
+      font-size: 12px;
+      background: #ccc;
+      display: inline-block;
+      position: absolute;
+      top: 30px;
+      left: 25px;
+      color: #fff;
+      padding: 2px 5px;
+      border-radius: 3px
+    }
+  </style>
 
 
+  <!--ui样式-->
+  <link rel='stylesheet' href='easy-style.css' type='text/css'>
 
-<!--ui样式-->
-<link rel='stylesheet' href='css-ui.css' type='text/css'>
-
-<div class="display-flex">
+  <div class="display-flex">
 
     <div class="items flex" data-title="加载">
-        <!--loading加载-->
-        <div class="loading"></div>    
+      <!--loading加载-->
+      <div class="loading"></div>
     </div>
 
     <div class="items flex" data-title="多级菜单">
-        <!--loading加载-->
-        <ul class="menu">
-    <li>
-        <span>电子产品</span>
-        <ul>
+      <!--loading加载-->
+      <ul class="menu">
+        <li>
+          <span>电子产品</span>
+          <ul>
             <li>
-                <span>手机</span>
-                <ul>
-                    <li><span>苹果</span></li>
-                    <li><span>三星</span></li>
-                    <li><span>华为</span></li>
-                </ul>
+              <span>手机</span>
+              <ul>
+                <li><span>苹果</span></li>
+                <li><span>三星</span></li>
+                <li><span>华为</span></li>
+              </ul>
             </li>
             <li>
-                <span>笔记本</span>
-                <ul>
-                    <li><span>联想</span></li>
-                    <li><span>华硕</span></li>
-                    <li><span>戴尔</span></li>
-                </ul>
+              <span>笔记本</span>
+              <ul>
+                <li><span>联想</span></li>
+                <li><span>华硕</span></li>
+                <li><span>戴尔</span></li>
+              </ul>
             </li>
-        </ul>
-    </li>
-    <li>
-        <span>食品</span>
-        <ul>
+          </ul>
+        </li>
+        <li>
+          <span>食品</span>
+          <ul>
             <li>
-                <span>饮料</span>
-                <ul>
-                    <li><span>可乐</span></li>
-                    <li><span>雪碧</span></li>
-                    <li><span>冰红茶</span></li>
-                    <li><span>果汁</span></li>
-                    <li><span>奶茶</span></li>
-                </ul>
-            </li>
-            <li>
-                <span>坚果</span>
-                <ul>
-                    <li><span>碧根果</span></li>
-                    <li><span>夏威夷果</span></li>
-                    <li><span>腰果</span></li>
-                    <li><span>核桃</span></li>
-                    <li><span>杏仁</span></li>
-                </ul>
+              <span>饮料</span>
+              <ul>
+                <li><span>可乐</span></li>
+                <li><span>雪碧</span></li>
+                <li><span>冰红茶</span></li>
+                <li><span>果汁</span></li>
+                <li><span>奶茶</span></li>
+              </ul>
             </li>
             <li>
-                <span>糕点</span>
-                <ul>
-                    <li><span>蛋挞</span></li>
-                    <li><span>戚风蛋糕</span></li>
-                    <li><span>披萨</span></li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <span>服装</span>
-        <ul>
-            <li>
-                <span>男款</span>
-                <ul>
-                    <li><span>西服</span></li>
-                    <li><span>领带</span></li>
-                    <li><span>皮鞋</span></li>
-                    <li><span>T恤</span></li>
-                    <li><span>卫衣</span></li>
-                </ul>
+              <span>坚果</span>
+              <ul>
+                <li><span>碧根果</span></li>
+                <li><span>夏威夷果</span></li>
+                <li><span>腰果</span></li>
+                <li><span>核桃</span></li>
+                <li><span>杏仁</span></li>
+              </ul>
             </li>
             <li>
-                <span>女款</span>
-                <ul>
-                    <li><span>头饰</span></li>
-                    <li><span>丝巾</span></li>
-                    <li><span>连衣裙</span></li>
-                </ul>
+              <span>糕点</span>
+              <ul>
+                <li><span>蛋挞</span></li>
+                <li><span>戚风蛋糕</span></li>
+                <li><span>披萨</span></li>
+              </ul>
             </li>
-        </ul>
-    </li>
-</ul>    
+          </ul>
+        </li>
+        <li>
+          <span>服装</span>
+          <ul>
+            <li>
+              <span>男款</span>
+              <ul>
+                <li><span>西服</span></li>
+                <li><span>领带</span></li>
+                <li><span>皮鞋</span></li>
+                <li><span>T恤</span></li>
+                <li><span>卫衣</span></li>
+              </ul>
+            </li>
+            <li>
+              <span>女款</span>
+              <ul>
+                <li><span>头饰</span></li>
+                <li><span>丝巾</span></li>
+                <li><span>连衣裙</span></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
-   
+
     <div class="items flex" data-title="提示">
-        <!--tip-->
-        <span class="tip"  data-title="Currying">函数柯里化</span>    
-    </div>    
-</div>
+      <!--tip-->
+      <span class="tip" data-title="fucking crazy Thursday!">KFC</span>
+    </div>
+  </div>
 
-<div class="display-flex">
+  <div class="display-flex">
     <div class="items flex" data-title="五星打分">
-        <!--五星打分-->
-        <div class="star-box">
-    <input type="radio" id="star0" name="star"><label for="star0" class="star-cancel">取消</label>
-    <div class="star-wrap">
-        <input type="radio" id="star1" name="star"><label for="star1" class="star">★</label>
-        <input type="radio" id="star2" name="star"><label for="star2" class="star">★</label>
-        <input type="radio" id="star3" name="star"><label for="star3" class="star">★</label>
-        <input type="radio" id="star4" name="star"><label for="star4" class="star">★</label>
-        <input type="radio" id="star5" name="star"><label for="star5" class="star">★</label>
-    </div>
-</div>
+      <!--五星打分-->
+      <div class="star-box">
+        <input type="radio" id="star0" name="star"><label for="star0" class="star-cancel">取消</label>
+        <div class="star-wrap">
+          <input type="radio" id="star1" name="star"><label for="star1" class="star">★</label>
+          <input type="radio" id="star2" name="star"><label for="star2" class="star">★</label>
+          <input type="radio" id="star3" name="star"><label for="star3" class="star">★</label>
+          <input type="radio" id="star4" name="star"><label for="star4" class="star">★</label>
+          <input type="radio" id="star5" name="star"><label for="star5" class="star">★</label>
+        </div>
+      </div>
 
-    
+
     </div>
 
-    <div class="items flex"  data-title="模态框">
-        <!--dialog模态框-->
-        <div class="item">
-    <a href="#show-dialog" class="demo-show-dialog">Show A Dialog Created With CSS</a>
-</div>
-<div class="show-dialog" id="show-dialog">
-    <div class="dialog-header">提 示</div>
-    <div class="dialog-body">一个纯css交互式提示窗口</div>
-    <div class="dialog-footer">
-        <a href="#close-dialog" class="dialog-close">关闭</a>
+    <div class="items flex" data-title="模态框">
+      <!--dialog模态框-->
+      <div class="item">
+        <a href="#show-dialog" class="demo-show-dialog">Show A Dialog Created With CSS</a>
+      </div>
+      <div class="show-dialog" id="show-dialog">
+        <div class="dialog-header">提 示</div>
+        <div class="dialog-body">一个纯css交互式提示窗口</div>
+        <div class="dialog-footer">
+          <a href="#" class="dialog-close">关闭</a>
+        </div>
+      </div>
     </div>
-</div>    
-    </div>    
-</div>
+  </div>
 
-<div class="items"  data-title="手风琴">
-       <!--toggle手风琴-->
+
+  <div class="display-flex">
+    <div class="items flex" data-title="纯CSS内容轮播">
+      <!--纯CSS内容轮播-->
+      <div class="carousel">
+        <div class="wrap">
+          <div class="item">纯CSS内容轮播</div>
+          <div class="item">鼠标悬停轮播之上，动画暂停</div>
+          <div class="item">humanlegacy</div>
+          <div class="item">Vue</div>
+          <div class="item">JavaScript</div>
+          <div class="item">github.com/humanlegacy</div>
+          <!--末尾补一个首条数据-->
+          <div class="item">从一道面试题谈谈函数柯里化</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="items" data-title="手风琴">
+    <!--toggle手风琴-->
     <div class="toggle">
-    <div class="toggle-item">
+      <div class="toggle-item">
         <input type="radio" name="toggle" id="toggle1" checked><label for="toggle1">从一道面试题谈谈函数柯里化(Currying)</label>
         <div class="toggle-content">
-            从一道面试题谈谈函数柯里化(Currying)从一道面试题谈谈函数柯里化(Currying)从一道面试题谈谈函数柯里化(Currying)
+          从一道面试题谈谈函数柯里化(Currying)从一道面试题谈谈函数柯里化(Currying)从一道面试题谈谈函数柯里化(Currying)
         </div>
-    </div>
-    <div class="toggle-item">
+      </div>
+      <div class="toggle-item">
         <input type="radio" name="toggle" id="toggle2"><label for="toggle2">简单理解JavaScript中的柯里化和反柯里化</label>
         <div class="toggle-content">
-            简单理解JavaScript中的柯里化和反柯里化简单理解JavaScript中的柯里化和反柯里化简单理解JavaScript中的柯里化和反柯里化
+          简单理解JavaScript中的柯里化和反柯里化简单理解JavaScript中的柯里化和反柯里化简单理解JavaScript中的柯里化和反柯里化
         </div>
-    </div>
-    <div class="toggle-item">
+      </div>
+      <div class="toggle-item">
         <input type="radio" name="toggle" id="toggle3"><label for="toggle3">浅析 JavaScript 中的 函数 currying 柯里化</label>
         <div class="toggle-content">
-            浅析 JavaScript 中的 函数 currying 柯里化浅析 JavaScript 中的 函数 currying 柯里化浅析 JavaScript 中的 函数 currying 柯里化
+          浅析 JavaScript 中的 函数 currying 柯里化浅析 JavaScript 中的 函数 currying 柯里化浅析 JavaScript 中的 函数 currying 柯里化
         </div>
+      </div>
     </div>
-</div> 
-</div>
+  </div>
 
-<div class="items"  data-title="响应式表格">
+  <div class="items" data-title="响应式表格">
     <!--table响应式表格-->
     <table border="0" cellspacing="0" cellpadding="0" class="table">
-    <thead>
+      <thead>
         <tr>
-            <td>姓名</td>
-            <td>性别</td>
-            <td>身高</td>
-            <td>体重</td>
-            <td>成绩</td>
+          <td>姓名</td>
+          <td>性别</td>
+          <td>身高</td>
+          <td>体重</td>
+          <td>成绩</td>
         </tr>
-    </thead>
-    <tbody>
+      </thead>
+      <tbody>
         <tr>
-            <td data-title="姓名">张三</td>
-            <td data-title="性别">男</td>
-            <td data-title="身高">180cm</td>
-            <td data-title="体重">65kg</td>
-            <td data-title="成绩">85</td>
-        </tr>
-        <tr>
-            <td data-title="姓名">李四</td>
-            <td data-title="性别">女</td>
-            <td data-title="身高">160cm</td>
-            <td data-title="体重">55kg</td>
-            <td data-title="成绩">90</td>
+          <td data-title="姓名">张三</td>
+          <td data-title="性别">男</td>
+          <td data-title="身高">180cm</td>
+          <td data-title="体重">65kg</td>
+          <td data-title="成绩">85</td>
         </tr>
         <tr>
-            <td data-title="姓名">王五</td>
-            <td data-title="性别">男</td>
-            <td data-title="身高">170cm</td>
-            <td data-title="体重">85kg</td>
-            <td data-title="成绩">75</td>
+          <td data-title="姓名">李四</td>
+          <td data-title="性别">女</td>
+          <td data-title="身高">160cm</td>
+          <td data-title="体重">55kg</td>
+          <td data-title="成绩">90</td>
         </tr>
-    </tbody>
-</table>    
-</div>
+        <tr>
+          <td data-title="姓名">王五</td>
+          <td data-title="性别">男</td>
+          <td data-title="身高">170cm</td>
+          <td data-title="体重">85kg</td>
+          <td data-title="成绩">75</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
 
 </body>
-</html>    
+
+</html>
